@@ -2,7 +2,6 @@ import discord
 import os
 from dotenv import load_dotenv
 from discord.ext import commands
-from config import TOKEN
 import asyncio
 import discord
 from discord.ext import commands, tasks
@@ -16,7 +15,7 @@ client = discord.Client(intents=intents)
 bot = commands.Bot(command_prefix="!")
 
 
-DISCORD_TOKEN = os.getenv("OTQ0ODEzNjk4MzgyNDM4NDYw.GurFUO.tIz8920VmbPfHdeNoIGSpyxGNL5XNkcKbcpyU0")
+DISCORD_TOKEN = os.getenv("YOUR TOKEN HERE")
 
 
 @bot.command(
@@ -84,4 +83,4 @@ async def tell_me_about_yourself(ctx):
 
 
 if __name__ == "__main__":
-    bot.run(TOKEN)
+    bot.run(YOUR TOKEN HERE)
